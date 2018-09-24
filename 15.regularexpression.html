@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>regular expression</title>
+</head>
+    
+<body>
+    <p>String: <span id="string"></span></p>
+    <p>Pattern: <span id="pattern"></span></p>
+    <p>Result(search): <span id="search"></span></p>
+    <p>Result(match): <span id="match"></span></p>
+    <p>Result(test): <span id="test"></span></p>
+
+    
+<script>
+    var str = "Atlanta";
+//    var pattern =/[a-z]/g; // find all from a to z
+//   var pattern =/[^atn]/g;//find not atn pattern
+//var pattern = /[4-7]/g; //find numbers 4 to 7
+//    var pattern= /\d/g; //find digit
+//var pattern =/\w/g; //find alphanumeric characters
+//var pattern =/\W/g; //find Non alphanumeric characters
+//var pattern =/\s/g; //find space
+    //    var pattern= /\d{4}/g; //find if there are total of 4 digits
+    
+//    var pattern = new RegExp("a", "g");
+//i modifier will return first instance, g is global search instance.
+//            window.alert(pattern.test(str));
+//            window.alert(pattern.match(str));
+//            window.alert(pattern.search(str));
+    
+    document.getElementById("string").innerHTML = str;
+    document.getElementById("pattern").innerHTML = str;
+    document.getElementById("search").innerHTML = str.search(pattern);
+    document.getElementById("match").innerHTML = str.match(pattern);
+    document.getElementById("test").innerHTML = pattern.test(str);
+    
+</script>
+</body>
+
+
+
+</html>
